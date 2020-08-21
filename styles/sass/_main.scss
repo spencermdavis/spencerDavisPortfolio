@@ -1,0 +1,39 @@
+main {
+  h2 {
+    margin-bottom: 2rem;
+  }
+}
+
+.section1 {
+  margin-bottom: 10rem;
+  ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+    grid-gap: 2rem;
+    li {
+      text-align: center;
+    }
+  }
+}
+
+.section2 {
+  h2 {
+    margin-bottom: 4rem;
+  }
+  h3 {
+    font-weight: 600;
+    margin-bottom: 2rem;
+  }
+  h4 {
+    font-weight: 600;
+    margin-bottom: 2rem;
+  }
+  p {
+    margin-bottom: 4rem;
+  }
+  ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(175px, 1fr));
+    grid-gap: 1rem;
+  }
+}
