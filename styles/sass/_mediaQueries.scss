@@ -1,0 +1,46 @@
+@media (max-width: 900px) {
+  .headerStuff {
+    a {
+      width: 40% !important;
+    }
+  }
+}
+
+@media (max-width: 680px) {
+  body {
+    text-align: center;
+  }
+
+  .headerStuff {
+    text-align: left;
+    a {
+      width: 60% !important;
+    }
+  }
+
+  .section2 {
+    li {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      img {
+        align-self: center;
+      }
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  nav {
+    visibility: hidden;
+  }
+}
+
+// @media (max-width: 450px) {
+//   .section2 {
+//     li {
+//       width: 20px;
+//       height: 20px;
+//     }
+//   }
+// }

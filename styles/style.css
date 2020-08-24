@@ -313,6 +313,11 @@ body {
   margin: 0 auto;
 }
 
+.formWrapper {
+  width: 95%;
+  margin: 0 auto;
+}
+
 .skip-link {
   clip: rect(1px, 1px, 1px, 1px);
   height: 1px;
@@ -416,11 +421,13 @@ nav ul a:focus:before {
   padding: 1rem;
   width: 25%;
   text-align: center;
+  border-radius: 0.15em;
   -webkit-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
 }
 
-.headerStuff a:hover {
+.headerStuff a:hover,
+.headerStuff a:focus {
   background-position: left bottom;
 }
 
@@ -435,17 +442,88 @@ main h2 {
 .section1 ul {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (minmax(290px, 1fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
-  grid-gap: 2rem;
+  -ms-grid-columns: (minmax(200px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 4rem;
 }
 
 .section1 ul li {
   text-align: center;
+  font-weight: 600;
+}
+
+.section1 ul li img {
+  width: 100%;
+  height: 100%;
+  -webkit-transition: -webkit-box-shadow 0.3s;
+  transition: -webkit-box-shadow 0.3s;
+  transition: box-shadow 0.3s;
+  transition: box-shadow 0.3s, -webkit-box-shadow 0.3s;
+  margin-bottom: 4rem;
+}
+
+.section1 ul li img:hover,
+.section1 ul li img:focus {
+  -webkit-box-shadow: 20px 20px 20px rgba(39, 35, 35, 0.664);
+          box-shadow: 20px 20px 20px rgba(39, 35, 35, 0.664);
+}
+
+.section1 .lifeTracker {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1, 1fr;
+      grid-template-columns: 1, 1fr;
+  -ms-grid-rows: (1fr)[2];
+      grid-template-rows: repeat(2, 1fr);
+  height: 100%;
+  -webkit-transition: -webkit-box-shadow 0.3s;
+  transition: -webkit-box-shadow 0.3s;
+  transition: box-shadow 0.3s;
+  transition: box-shadow 0.3s, -webkit-box-shadow 0.3s;
+  margin-bottom: 4rem;
+  position: relative;
+}
+
+.section1 .lifeTracker .lifeTrackerTop {
+  background-color: #36382e;
+}
+
+.section1 .lifeTracker .lifeTrackerBottom {
+  background-color: #273e47;
+}
+
+.section1 .lifeTracker .lifeTrackerBox {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  height: 40%;
+  min-height: 100px;
+  background-color: #d8c99b;
+  border-radius: 0.5em;
+}
+
+.section1 .lifeTracker .lifeTracker:focus,
+.section1 .lifeTracker .lifeTracker:hover {
+  -webkit-box-shadow: 20px 20px 20px rgba(39, 35, 35, 0.664);
+          box-shadow: 20px 20px 20px rgba(39, 35, 35, 0.664);
+}
+
+.section1 .lifeTracker .flowerful {
+  background-color: #81b29a;
+}
+
+.section1 .lifeTracker .flowerful svg {
+  height: 50%;
+  position: absolute;
+  bottom: 0;
+}
+
+.section2 {
+  margin-bottom: 5rem;
 }
 
 .section2 h2 {
-  margin-bottom: 4rem;
+  margin-bottom: 5rem;
 }
 
 .section2 h3 {
@@ -465,7 +543,163 @@ main h2 {
 .section2 ul {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (minmax(175px, 1fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(175px, 1fr));
+  -ms-grid-columns: (minmax(110px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
+  grid-gap: 2rem;
+}
+
+.section2 ul li {
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.section2 ul img,
+.section2 ul i {
+  margin-bottom: 1rem;
+}
+
+.section2 ul p {
+  font-size: 1.75rem;
+}
+
+.section3 {
+  margin-bottom: 5rem;
+}
+
+.section3 h2 {
+  margin-bottom: 5rem;
+}
+
+.section3 form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.section3 form label {
+  display: none;
+}
+
+.section3 form input[type="text"],
+.section3 form input[type="email"],
+.section3 form #message {
+  border: 0px solid rgba(0, 0, 0, 0.85);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.85) !important;
+  background-color: #e0e0e0;
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+  padding: 6px 12px;
+}
+
+.section3 form .nameEmailSubject {
+  display: -ms-grid;
+  display: grid;
+  width: 100%;
   grid-gap: 1rem;
+  -ms-grid-columns: (minmax(150px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  margin-bottom: 2rem;
+}
+
+.section3 form #message {
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+.section3 form input[type="submit"] {
+  padding: 6px 12px;
+  color: #ffffff;
+  position: relative;
+  border: 0px solid #ffc0cb;
+  background: -webkit-gradient(linear, left top, right top, color-stop(50%, rgba(0, 0, 0, 0.85)), color-stop(50%, #ffc0cb));
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.85) 50%, #ffc0cb 50%);
+  background-size: 200% 100%;
+  background-position: right bottom;
+  -webkit-box-shadow: 1px 2px 2px rgba(39, 35, 35, 0.664);
+          box-shadow: 1px 2px 2px rgba(39, 35, 35, 0.664);
+  border-radius: 0.15em;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.section3 form input[type="submit"]:hover,
+.section3 form input[type="submit"]:focus {
+  background-position: left bottom;
+}
+
+.section3 form input[type="submit"]:active {
+  top: 1px;
+}
+
+footer {
+  background-color: rgba(0, 0, 0, 0.85);
+  color: #ffffff;
+  text-align: center;
+  padding: 1rem 1rem;
+}
+
+footer li {
+  margin-top: 1rem;
+}
+
+@media (max-width: 900px) {
+  .headerStuff a {
+    width: 40% !important;
+  }
+}
+
+@media (max-width: 680px) {
+  body {
+    text-align: center;
+  }
+  .headerStuff {
+    text-align: left;
+  }
+  .headerStuff a {
+    width: 60% !important;
+  }
+  .section2 li {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .section2 li img {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+}
+
+@media (max-width: 600px) {
+  nav {
+    visibility: hidden;
+  }
 }
