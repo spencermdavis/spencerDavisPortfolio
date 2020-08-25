@@ -34,6 +34,19 @@ nav {
   }
 }
 
+.titleAndPhoto {
+  display: grid;
+  margin-top: 8rem;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  img {
+    border-radius: 20em;
+  }
+  svg {
+    position: relative;
+    bottom: 130px;
+  }
+}
+
 .headerStuff {
   display: flex;
   flex-direction: column;
@@ -48,7 +61,7 @@ nav {
     background-size: 200% 100%;
     background-position: right bottom;
     padding: 1rem;
-    width: 25%;
+    width: 40%;
     text-align: center;
     border-radius: 0.15em;
     transition: all 0.4s ease-in-out;

@@ -337,6 +337,7 @@ body {
 
 h1 {
   font-weight: 700;
+  margin-bottom: 0.5rem;
 }
 
 li img {
@@ -395,6 +396,23 @@ nav ul a:focus:before {
   width: 100%;
 }
 
+.titleAndPhoto {
+  display: -ms-grid;
+  display: grid;
+  margin-top: 8rem;
+  -ms-grid-columns: (minmax(200px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.titleAndPhoto img {
+  border-radius: 20em;
+}
+
+.titleAndPhoto svg {
+  position: relative;
+  bottom: 130px;
+}
+
 .headerStuff {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -419,7 +437,7 @@ nav ul a:focus:before {
   background-size: 200% 100%;
   background-position: right bottom;
   padding: 1rem;
-  width: 25%;
+  width: 40%;
   text-align: center;
   border-radius: 0.15em;
   -webkit-transition: all 0.4s ease-in-out;
@@ -460,62 +478,13 @@ main h2 {
   transition: box-shadow 0.3s;
   transition: box-shadow 0.3s, -webkit-box-shadow 0.3s;
   margin-bottom: 4rem;
+  max-height: 370px;
 }
 
 .section1 ul li img:hover,
 .section1 ul li img:focus {
   -webkit-box-shadow: 20px 20px 20px rgba(39, 35, 35, 0.664);
           box-shadow: 20px 20px 20px rgba(39, 35, 35, 0.664);
-}
-
-.section1 .lifeTracker {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1, 1fr;
-      grid-template-columns: 1, 1fr;
-  -ms-grid-rows: (1fr)[2];
-      grid-template-rows: repeat(2, 1fr);
-  height: 100%;
-  -webkit-transition: -webkit-box-shadow 0.3s;
-  transition: -webkit-box-shadow 0.3s;
-  transition: box-shadow 0.3s;
-  transition: box-shadow 0.3s, -webkit-box-shadow 0.3s;
-  margin-bottom: 4rem;
-  position: relative;
-}
-
-.section1 .lifeTracker .lifeTrackerTop {
-  background-color: #36382e;
-}
-
-.section1 .lifeTracker .lifeTrackerBottom {
-  background-color: #273e47;
-}
-
-.section1 .lifeTracker .lifeTrackerBox {
-  position: absolute;
-  top: 20px;
-  left: 20px;
-  height: 40%;
-  min-height: 100px;
-  background-color: #d8c99b;
-  border-radius: 0.5em;
-}
-
-.section1 .lifeTracker .lifeTracker:focus,
-.section1 .lifeTracker .lifeTracker:hover {
-  -webkit-box-shadow: 20px 20px 20px rgba(39, 35, 35, 0.664);
-          box-shadow: 20px 20px 20px rgba(39, 35, 35, 0.664);
-}
-
-.section1 .lifeTracker .flowerful {
-  background-color: #81b29a;
-}
-
-.section1 .lifeTracker .flowerful svg {
-  height: 50%;
-  position: absolute;
-  bottom: 0;
 }
 
 .section2 {
@@ -538,6 +507,17 @@ main h2 {
 
 .section2 p {
   margin-bottom: 4rem;
+}
+
+.section2 a {
+  color: #e4a199;
+  -webkit-transition: color 0.3s;
+  transition: color 0.3s;
+}
+
+.section2 a:hover,
+.section2 a:focus {
+  color: gray;
 }
 
 .section2 ul {

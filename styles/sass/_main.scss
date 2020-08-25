@@ -18,46 +18,11 @@ main {
         height: 100%;
         transition: box-shadow 0.3s;
         margin-bottom: 4rem;
+        max-height: 370px;
       }
       img:hover,
       img:focus {
         box-shadow: 20px 20px 20px $boxShadow;
-      }
-    }
-  }
-  .lifeTracker {
-    display: grid;
-    grid-template-columns: 1, 1fr;
-    grid-template-rows: repeat(2, 1fr);
-    height: 100%;
-    transition: box-shadow 0.3s;
-    margin-bottom: 4rem;
-    position: relative;
-    .lifeTrackerTop {
-      background-color: #36382e;
-    }
-    .lifeTrackerBottom {
-      background-color: #273e47;
-    }
-    .lifeTrackerBox {
-      position: absolute;
-      top: 20px;
-      left: 20px;
-      height: 40%;
-      min-height: 100px;
-      background-color: #d8c99b;
-      border-radius: 0.5em;
-    }
-    .lifeTracker:focus,
-    .lifeTracker:hover {
-      box-shadow: 20px 20px 20px $boxShadow;
-    }
-    .flowerful {
-      background-color: #81b29a;
-      svg {
-        height: 50%;
-        position: absolute;
-        bottom: 0;
       }
     }
   }
@@ -78,6 +43,14 @@ main {
   }
   p {
     margin-bottom: 4rem;
+  }
+  a {
+    color: $linkColor;
+    transition: color 0.3s;
+  }
+  a:hover,
+  a:focus {
+    color: gray;
   }
   ul {
     display: grid;

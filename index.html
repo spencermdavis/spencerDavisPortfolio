@@ -21,9 +21,18 @@
             <li><a href="" class="middle">Let's talk</a></li>
           </ul>
         </nav>
+        <div class="titleAndPhoto">
         <div class="headerStuff">
           <h1>Spencer Davis</h1>
+          <p>Front-End Developer</p>
           <a href="">Discover More</a>
+        </div>
+        <div class="photoSVG">
+          <img src="./assets/12885863_10208633676056800_3386141535088096324_o.jpg" alt="Spencer Davis sits in a white plastic chair embedded in a grassy hill.">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+            <path fill="#273036" fill-opacity="1" d="M0,128L48,106.7C96,85,192,43,288,37.3C384,32,480,64,576,101.3C672,139,768,181,864,186.7C960,192,1056,160,1152,122.7C1248,85,1344,43,1392,21.3L1440,0L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
+          </svg>
+        </div>
         </div>
       </div>
     </header>
@@ -35,13 +44,7 @@
             <li>
               <a href="">
                 <div class="lifeTracker">
-                  <div class="lifeTrackerTop">
-
-                  </div>
-                  <div class="lifeTrackerBottom">
-
-                  </div>
-                  <div class="lifeTrackerBox"></div>
+                  <img src="./assets/lifeTracker.jpg" alt="Magic: The Gathering Life Tracker logo">
                 </div>
                 Magic: The Gathering Life Tracker
               </a>
@@ -49,15 +52,14 @@
             <li>
               <a href="">
                 <div class="flowerful">
-                  
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#3D405B" fill-opacity="1" d="M0,224L48,240C96,256,192,288,288,272C384,256,480,192,576,181.3C672,171,768,213,864,240C960,267,1056,277,1152,261.3C1248,245,1344,203,1392,181.3L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
+                  <img src="./assets/flowerful.jpg" alt="Garden color coordinator logo">
                 </div>
                 Flowerful: A Garden Color Coordinator
               </a>
             </li>
             <li>
               <a href="">
-                <img src="https://www.placecage.com/c/200/300" alt="" />
+                <img src="./assets/collectionManager.jpg" alt="Magic: The Gathering inventory manager logo" />
                 Magic: The Gathering Collection Manager
               </a>
             </li>
@@ -68,14 +70,14 @@
         <div class="wrapper">
           <h2>About me</h2>
           <h3>
-            It's-a me
+            Hello! I'm a Toronto-based front-end developer, writer, and photographer.
           </h3>
           <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod eaque
-            veniam mollitia dolorum consequuntur? Earum nesciunt, dicta tempore
-            facilis deserunt ratione quam laboriosam dolores voluptates fuga
-            magnam! Explicabo, harum modi.
+            I am a front end dev with experience using modern web development technologies, techniques, and best practices to create a more beautiful, useful, accessible web. I am also trained to use these tools in Git-based production environments, both in paired programming and team-based collaboration scenarios. My code is user-centered; my focus on accessibility and responsive design means my sites are useful to as many people as possible. 
           </p>
+          <p>Fun fact: I was an MA candidate in philosophy at the New School for Social Research in NYC with a special interest in aesthetics and art history. Art, research, critical analysis, and the pursuit of the good life are very important to me. My experience in academia shapes my beliefs about both my own code and the broader world, which gives me a unique perspective as both a developer and a human being anticipating the needs of others.</p>
+          <p>In my free time I am a prolific analog photographer--you can find a sampling of my work on my <a href="https://www.instagram.com/spencertain/">Instagram</a>. I am also an avid player of board games, tabletop roleplaying games, and Magic: The Gathering.</p>
+          <p>I invite you to read more in my <a href="./assets/sdresume.pdf">resume</a>. Or--if you're really curious--you can peruse the issue of the <a href="./assets/2016-Philosophy-journal.pdf">Vassar College Journal of Philosophy</a> for which I served as a co-Editor-in-Chief.</p>
           <h4>My Services</h4>
           <ul>
             <li><i class="fab fa-sass"></i><p>Sass</p></li>
@@ -83,7 +85,7 @@
             <li><i class="fab fa-html5"></i><p>HTML5</p></li>
             <li><i class="fab fa-css3-alt"></i><p>CSS3</p></li>
             <li><i class="fas fa-universal-access"></i><p>Accessibility Standards</p></li>
-            <li><i class="fab fa-github"></i><p>Github Collaboration</p></li>
+            <li><i class="fab fa-github"></i><p>Git-based Collaboration</p></li>
             <li>
               <img
                 src="./assets/iconfinder_firebase_4691533.svg"
@@ -133,14 +135,14 @@
         <div class="wrapper">
           <h2>Contact Me</h2>
           <div class="formWrapper">
-            <form>
+            <form method="POST" action="http://www.focuspocus.io/magic/spencer@spencerdavis.io">
             <div class="nameEmailSubject">
               <label for='name'>Name</label>
-              <input type="text" id='name' placeholder="Name" autocomplete="off" required/>
+              <input type="text" name="name" id='name' placeholder="Name" autocomplete="off" required/>
               <label for='email'>Email Address</label>
-              <input type="email" id='email' placeholder="Email Address" autocomplete="off" required/>
+              <input type="email" name="email" id='email' placeholder="Email Address" autocomplete="off" required/>
               <label for='subject'>Subject</label>
-              <input type="text" id='subject' placeholder="Subject" autocomplete="off" required/>
+              <input type="text" name="subject" id='subject' placeholder="Subject" autocomplete="off" required/>
             </div>
             <label for='message'>Message</label>
             <textarea name="message" id="message" cols="70" rows="5"placeholder="Message" autocomplete="off" required resizing='none'></textarea>
