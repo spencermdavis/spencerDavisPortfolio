@@ -404,13 +404,17 @@ nav ul a:focus:before {
       grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 }
 
-.titleAndPhoto img {
+.photoSVG {
+  position: relative;
+}
+
+.photoSVG img {
   border-radius: 20em;
 }
 
-.titleAndPhoto svg {
-  position: relative;
-  bottom: 130px;
+.photoSVG svg {
+  position: absolute;
+  bottom: 70px;
 }
 
 .headerStuff {
@@ -450,7 +454,7 @@ nav ul a:focus:before {
 }
 
 main h2 {
-  margin-bottom: 2rem;
+  margin-bottom: 4rem;
 }
 
 .section1 {
@@ -460,14 +464,18 @@ main h2 {
 .section1 ul {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (minmax(200px, 1fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  -ms-grid-columns: (minmax(290px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
   grid-gap: 4rem;
 }
 
 .section1 ul li {
   text-align: center;
   font-weight: 600;
+}
+
+.section1 ul li figure {
+  margin: 0 auto;
 }
 
 .section1 ul li img {
@@ -477,8 +485,7 @@ main h2 {
   transition: -webkit-box-shadow 0.3s;
   transition: box-shadow 0.3s;
   transition: box-shadow 0.3s, -webkit-box-shadow 0.3s;
-  margin-bottom: 4rem;
-  max-height: 370px;
+  margin-bottom: 2rem;
 }
 
 .section1 ul li img:hover,

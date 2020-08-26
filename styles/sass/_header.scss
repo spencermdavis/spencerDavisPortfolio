@@ -38,12 +38,16 @@ nav {
   display: grid;
   margin-top: 8rem;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.photoSVG {
+  position: relative;
   img {
     border-radius: 20em;
   }
   svg {
-    position: relative;
-    bottom: 130px;
+    position: absolute;
+    bottom: 70px;
   }
 }
 
