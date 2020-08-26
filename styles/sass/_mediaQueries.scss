@@ -6,6 +6,13 @@
   }
 }
 
+@media (max-width: 690px) {
+  .instructions {
+    width: 80% !important;
+    font-size: 1.5rem !important;
+  }
+}
+
 @media (max-width: 680px) {
   body {
     text-align: center;
@@ -36,11 +43,8 @@
   }
 }
 
-// @media (max-width: 450px) {
-//   .section2 {
-//     li {
-//       width: 20px;
-//       height: 20px;
-//     }
-//   }
-// }
+@media (max-width: 400px) {
+  footer {
+    text-align: center;
+  }
+}
