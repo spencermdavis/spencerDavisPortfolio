@@ -7,46 +7,54 @@
     <link rel="stylesheet" href="./styles/style.css" />
   </head>
   <body>
-    <header class="trackerHeader">
+    <header class="projectHeader">
       <div class="wrapper">
         <nav>
           <ul>
-            <li><a href="" class="middle">Home</a></li>
-            <li><a href="" class="middle">Projects</a></li>
-            <li><a href="" class="middle">About</a></li>
-            <li><a href="" class="middle">Let's talk</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#collectionProjects">Projects</a></li>
+            <li><a href="index.html#about">About</a></li>
+            <li><a href="index.html#contact">Let's talk</a></li>
           </ul>
         </nav>
-        <h1>Magic: The Gathering Inventory Manager</h1>
-        <img
-          src="./assets/mtgManagerCapture.PNG"
-          alt="Magic: The Gathering inventory manager logo"
-        />
+        <div class="projectHeaderStuff">
+          <h1>Magic: The Gathering Inventory Manager</h1>
+          <img
+            src="./assets/mtgManagerCapture.PNG"
+            alt="Magic: The Gathering inventory manager logo"
+          />
+        </div>
       </div>
     </header>
     <main>
-      <section class="trackerDescription">
+      <section class="projectDescription">
         <div class="wrapper">
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. At eos
-            ducimus quisquam sapiente rem ad a cum molestias harum, obcaecati
-            explicabo ratione quasi, sunt dolorem fugit ut placeat delectus
-            iste?
+            The Magic: The Gathering Collection Manager is an inventory manager
+            for the eponymous card game. By means of the React framework,
+            Firebase's live database feature, and integration with the Scryfall
+            RESTful API I built a lightweight, performant, beautiful tool for
+            the management of players' often-large card inventories. Users can
+            input any of Magic's over 20,000 cards into the input field and see
+            it appear instantly in their collection. The Scryfall API allows the
+            user to see relevant information about their card at a glance, while
+            thanks to Firebase they can then can both access and delete their
+            cards across app instances.
           </p>
           <h3>
-            The project lives
+            This project lives
             <a href="https://spencermdavis.github.io/spencerDavisProjectFive/"
               >here</a
             >.
           </h3>
         </div>
       </section>
-      <section class="projectLinks">
+      <section id="collectionProjects" class="projectLinks">
         <div class="wrapper">
-          <h2>More work</h2>
+          <h2>More work:</h2>
           <ul>
             <li>
-              <a href="">
+              <a href="lifeTracker.html">
                 <figure>
                   <img
                     src="./assets/lifeTracker.jpg"
@@ -59,7 +67,7 @@
               </a>
             </li>
             <li>
-              <a href="">
+              <a href="flowerful.html">
                 <figure>
                   <img
                     src="./assets/flowerful.jpg"
@@ -81,6 +89,14 @@
         <ul>
           <li>spencer@spencerdavis.io</li>
         </ul>
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Let's talk</a></li>
+          </ul>
+        </nav>
       </div>
     </footer>
   </body>

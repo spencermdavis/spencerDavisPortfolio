@@ -11,14 +11,14 @@
     ></script>
   </head>
   <body>
-    <header>
+    <header class="mainHeader">
       <div class="wrapper">
         <nav>
           <ul>
-            <li><a href="" class="middle">Home</a></li>
-            <li><a href="" class="middle">Projects</a></li>
-            <li><a href="" class="middle">About</a></li>
-            <li><a href="" class="middle">Let's talk</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Let's talk</a></li>
           </ul>
         </nav>
         <div class="titleAndPhoto">
@@ -36,13 +36,13 @@
         </div>
       </div>
     </header>
-    <main>
-      <section class="section1">
+    <main id="mainContent">
+      <section id="projects" class="section1">
         <div class="wrapper">
           <h2>Selected Projects</h2>
           <ul>
             <li>
-              <a href="">
+              <a href="lifeTracker.html">
                 <figure>
                   <img src="./assets/lifeTracker.jpg" alt="Magic: The Gathering Life Tracker logo">
                   <figcaption>
@@ -52,7 +52,7 @@
               </a>
             </li>
             <li>
-              <a href="">
+              <a href="flowerful.html">
                 <figure>
                   <img src="./assets/flowerful.jpg" alt="Garden color coordinator logo">
                   <figcaption>
@@ -62,7 +62,7 @@
               </a>
             </li>
             <li>
-              <a href="">
+              <a href="collectionManager.html">
                 <figure>
                   <img src="./assets/collectionManager.jpg" alt="Magic: The Gathering inventory manager logo" />
                   <figcaption>
@@ -74,7 +74,7 @@
           </ul>
         </div>
       </section>
-      <section class="section2">
+      <section id="about" class="section2">
         <div class="wrapper">
           <h2>About me</h2>
           <h3>
@@ -85,7 +85,7 @@
           </p>
           <p>Fun fact: I was an MA candidate in philosophy at the New School for Social Research in NYC with a special interest in aesthetics and art history. Art, research, critical analysis, and the pursuit of the good life are very important to me. My experience in academia shapes my beliefs about both my own code and the broader world, which gives me a unique perspective as both a developer and a human being anticipating the needs of others.</p>
           <p>In my free time I am a prolific analog photographer--you can find a sampling of my work on my <a href="https://www.instagram.com/spencertain/">Instagram</a>. I am also an avid player of board games, tabletop roleplaying games, and Magic: The Gathering.</p>
-          <p>I invite you to read more in my <a href="./assets/sdresume.pdf">resume</a>. Or--if you're really curious--you can peruse the issue of the <a href="./assets/2016-Philosophy-journal.pdf">Vassar College Journal of Philosophy</a> for which I served as a co-Editor-in-Chief.</p>
+          <p>I invite you to read more in my <a href="./assets/sdresume.pdf">resume</a>. Or--if you're really curious--you can peruse the issue of the <a href="./assets/2016-Philosophy-journal.pdf">Vassar College Journal of Philosophy</a> for which I served as co-Editor-in-Chief.</p>
           <h4>My Services</h4>
           <ul>
             <li><i class="fab fa-sass"></i><p>SCSS</p></li>
@@ -139,7 +139,7 @@
           </ul>
         </div>
       </section>
-      <section class="section3">
+      <section id="contact" class="section3">
         <div class="wrapper">
           <h2>Contact Me</h2>
           <div class="formWrapper">
@@ -168,11 +168,5 @@
         </ul>
       </div>
     </footer>
-    <script
-      src="https://code.jquery.com/jquery-3.4.0.min.js"
-      integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg="
-      crossorigin="anonymous"
-    ></script>
-    <script src="./scripts/script.js"></script>
   </body>
 </html>

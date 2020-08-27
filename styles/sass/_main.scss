@@ -9,7 +9,7 @@ main {
   margin-bottom: 10rem;
   ul {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(275px, 1fr));
     grid-gap: 4rem;
     li {
       text-align: center;
@@ -135,7 +135,7 @@ main {
   }
 }
 
-.trackerDescription {
+.projectDescription {
   a {
     color: $linkColor;
     transition: color 0.3s;
@@ -147,6 +147,9 @@ main {
   h3 {
     margin: 2rem 0;
     font-weight: 600;
+  }
+  p {
+    line-height: 1.3;
   }
 }
 

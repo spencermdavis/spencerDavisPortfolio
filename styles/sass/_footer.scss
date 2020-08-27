@@ -6,4 +6,20 @@ footer {
   li {
     margin-top: 1rem;
   }
+  nav {
+    display: none;
+    display: inline-block;
+    padding-bottom: 2rem;
+    li {
+      margin: 0 auto;
+    }
+    li:last-child a {
+      margin: 0 auto;
+    }
+    a {
+      color: #ffffff;
+      font-size: 1.75rem;
+      margin: 0 1rem 0 0;
+    }
+  }
 }
