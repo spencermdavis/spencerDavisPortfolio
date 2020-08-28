@@ -6,6 +6,14 @@ header {
   .menuButton {
     display: none;
   }
+  nav {
+    a {
+      border-top: 2px solid $darkestColor;
+      border-right: 2px solid $darkestColor;
+      font-weight: 600;
+      padding: 0.5rem 1rem;
+    }
+  }
 }
 
 nav {

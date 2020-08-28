@@ -7,7 +7,32 @@ main {
 
 .section1 {
   margin-bottom: 10rem;
+  a {
+    position: relative;
+  }
+  a:before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -30px;
+    left: 0;
+    background-color: $accentColor;
+    visibility: hidden;
+    transition: all 0.4s ease-in-out;
+  }
+  a:hover:before {
+    visibility: visible;
+    width: 100%;
+  }
+  a:focus:before {
+    visibility: visible;
+    width: 100%;
+  }
   ul {
+    *:first-child a::before {
+      bottom: -5px;
+    }
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(275px, 1fr));
     grid-gap: 4rem;
