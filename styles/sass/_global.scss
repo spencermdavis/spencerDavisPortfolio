@@ -165,3 +165,21 @@ h2 {
   color: $darkestColor;
   margin: 0 0.5rem 1rem 0.5rem;
 }
+
+// skip link styles
+
+.skip-link {
+  clip: rect(1px, 1px, 1px, 1px);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+.skip-link:focus {
+  clip: auto;
+  height: auto;
+  overflow: auto;
+  position: absolute;
+  width: auto;
+}
