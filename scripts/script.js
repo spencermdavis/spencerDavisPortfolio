@@ -10,8 +10,18 @@ portfolio.popoutSummon = () => {
   });
 };
 
+portfolio.discoverScroller = () => {
+  $(".discoverMore").on("click", function () {
+    // scroll to main content
+    document.querySelector("#mainContent").scrollIntoView({
+      behavior: "smooth",
+    });
+  });
+};
+
 portfolio.init = () => {
   portfolio.popoutSummon();
+  portfolio.discoverScroller();
 };
 
 $(function () {
