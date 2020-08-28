@@ -3,6 +3,29 @@ footer {
   color: #ffffff;
   text-align: right;
   padding: 1rem 1rem;
+  a {
+    color: #ffffff;
+    position: relative;
+  }
+  a:before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -5px;
+    left: 0;
+    background-color: $accentColor;
+    visibility: hidden;
+    transition: all 0.4s ease-in-out;
+  }
+  a:hover:before {
+    visibility: visible;
+    width: 100%;
+  }
+  a:focus:before {
+    visibility: visible;
+    width: 100%;
+  }
   li {
     margin-top: 1rem;
   }

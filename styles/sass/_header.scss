@@ -1,11 +1,11 @@
 header {
-  height: 70vh;
-  min-height: 900px;
   padding: 1rem 0 1rem 0;
-}
-
-.mainHeader {
-  min-height: 775px;
+  img {
+    display: inline-block;
+  }
+  .menuButton {
+    display: none;
+  }
 }
 
 nav {
@@ -47,7 +47,7 @@ nav {
 
 .photoSVG {
   position: relative;
-  height: 100%;
+  height: 650px;
   img {
     position: absolute;
     bottom: 50px;
@@ -65,7 +65,6 @@ nav {
   flex-direction: column;
   justify-content: center;
   height: 100%;
-  min-height: 70vh;
   a {
     position: relative;
     top: 2rem;
@@ -86,18 +85,15 @@ nav {
 }
 
 .projectHeader {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   h1 {
     margin: 8rem 0 2rem 0;
   }
   img {
     border-radius: 0.5em;
-    max-height: 650px;
     box-shadow: 0px 5px 5px $darkestColor;
+    max-height: 700px;
   }
-}
-
-.projectHeaderStuff {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
 }

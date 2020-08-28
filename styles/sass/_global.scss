@@ -92,3 +92,76 @@ h1 {
 h2 {
   font-weight: 600;
 }
+
+.sideList {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 3;
+  top: 0;
+  right: 0;
+  background-color: $accentColor;
+  opacity: 95%;
+  overflow-x: hidden;
+  padding-top: 60px;
+  transition: 0.5s;
+  box-shadow: 5px 5px 5px rgba(39, 35, 35, 0.664);
+  border-radius: 0.5em;
+}
+
+.sideListOpen {
+  width: 250px !important;
+}
+
+.menuButtonOpen {
+  margin-right: 175px !important;
+}
+
+.navList {
+  transition: all 0.2s;
+  text-align: right;
+  a {
+    margin: 2rem 0 0 2rem;
+    position: relative;
+    font-size: 3rem;
+    transition: color 0.4s;
+  }
+  a:before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -5px;
+    left: 0;
+    background-color: $darkestColor;
+    visibility: hidden;
+    transition: all 0.4s ease-in-out;
+  }
+  a:hover,
+  a:focus {
+    color: #ffffff;
+  }
+  a:hover:before {
+    visibility: visible;
+    width: 100%;
+  }
+  a:focus:before {
+    visibility: visible;
+    width: 100%;
+  }
+}
+
+.divHider {
+  display: none;
+}
+
+.divider {
+  font-size: 3rem;
+  cursor: default;
+}
+
+.listItem {
+  padding: 2rem;
+  color: $darkestColor;
+  margin: 0 0.5rem 1rem 0.5rem;
+}
