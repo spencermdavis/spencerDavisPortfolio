@@ -9,6 +9,14 @@
       src="https://kit.fontawesome.com/bef9dc9aad.js"
       crossorigin="anonymous"
     ></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-176918361-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-176918361-1');
+    </script>
   </head>
   <body>
     <a href="#mainContent" class="skip-link">Jump directly to main content</a>
@@ -54,10 +62,10 @@
     <main id="mainContent">
       <section id="projects" class="section1">
         <div class="wrapper">
-          <h2>Selected Projects</h2>
+          <h2>Selected work</h2>
           <ul>
             <li>
-              <a href="lifeTracker.html">
+              <a href="lifeTracker.html" aria-label="magic: the gathering life tracker">
                 <figure>
                   <img src="./assets/lifeTracker.jpg" alt="Magic: The Gathering Life Tracker logo">
                   <figcaption>
@@ -67,7 +75,7 @@
               </a>
             </li>
             <li>
-              <a href="flowerful.html">
+              <a href="flowerful.html" aria-label="flowerful: a garden color coordinator">
                 <figure>
                   <img src="./assets/flowerful.jpg" alt="Garden color coordinator logo">
                   <figcaption>
@@ -77,11 +85,24 @@
               </a>
             </li>
             <li>
-              <a href="collectionManager.html">
+              <a href="collectionManager.html" aria-label="magic: the gathering collection manager">
                 <figure>
                   <img src="./assets/collectionManager.jpg" alt="Magic: The Gathering inventory manager logo" />
                   <figcaption>
                     <a href="https://spencermdavis.github.io/spencerDavisProjectFive/">Magic: The Gathering Collection Manager</a>
+                  </figcaption>
+                </figure>
+              </a>
+            </li>
+            <li>
+              <a href="trivialPursuit.html" aria-label="not so trivial pursuit">
+                <figure>
+                  <img
+                    src="./assets/trivialPursuit.jpg"
+                    alt="Not So Trivial Pursuit logo"
+                  />
+                  <figcaption>
+                    <a href="https://trivial-pursuers.github.io/trivialPursuitProjectSix/">Not So Trivial Pursuit</a>
                   </figcaption>
                 </figure>
               </a>
@@ -101,7 +122,7 @@
           <p>Fun fact: I was an MA candidate in philosophy at the New School for Social Research in NYC with a special interest in aesthetics and art history. Art, research, critical analysis, and the pursuit of the good life are very important to me. My experience in academia shapes my beliefs about both my own code and the broader world, which gives me a unique perspective as both a developer and a human being anticipating the needs of others.</p>
           <p>In my free time I am a prolific analog photographer--you can find a sampling of my work on my <a href="https://www.instagram.com/spencertain/">Instagram</a>. I am also an avid player of board games, tabletop roleplaying games, and Magic: The Gathering.</p>
           <p>I invite you to read more in my <a href="./assets/sdresume.pdf">resume</a>. Or--if you're really curious--you can peruse the issue of the <a href="./assets/2016-Philosophy-journal.pdf">Vassar College Journal of Philosophy</a> for which I served as co-Editor-in-Chief.</p>
-          <h4>My Services</h4>
+          <h4>My services</h4>
           <ul>
             <li><i class="fab fa-sass"></i><p>SCSS</p></li>
             <li><i class="fab fa-js-square"></i><p>Javascript</p></li>
@@ -156,9 +177,9 @@
       </section>
       <section id="contact" class="section3">
         <div class="wrapper">
-          <h2>Contact Me</h2>
+          <h2>Contact me</h2>
           <div class="formWrapper">
-            <form method="POST" action="http://www.focuspocus.io/magic/spencer@spencerdavis.io">
+            <form method="POST" action="http://www.focuspocus.io/magic/spencer@spencerdavis.codes" enctype="multipart/form-data">
             <div class="nameEmailSubject">
               <label for='name'>Name</label>
               <input type="text" name="name" id='name' placeholder="Name" autocomplete="off" required/>
@@ -168,8 +189,8 @@
               <input type="text" name="subject" id='subject' placeholder="Subject" autocomplete="off" required/>
             </div>
             <label for='message'>Message</label>
-            <textarea name="message" id="message" cols="70" rows="5"placeholder="Message" autocomplete="off" required resizing='none'></textarea>
-            <input type="submit" class="submit"></input>
+            <textarea name="message" id="message" cols="70" rows="5" placeholder="Message" autocomplete="off" required></textarea>
+            <input value='Send' type="submit" class="submit"></input>
           </form>
           </div>
         </div>
@@ -179,8 +200,8 @@
       <div class="wrapper">
         <h2>Spencer Davis</h2>
         <ul>
-          <li><a href="mailto:spencer@spencerdavis.io">spencer@spencerdavis.io</a></li>
-          <li><a href="https://github.com/spencermdavis"><i class="fab fa-github"></i></a></li>
+          <li><a href="mailto:spencer@spencerdavis.codes">spencer@spencerdavis.codes</a></li>
+          <li><a href="https://github.com/spencermdavis" aria-label="external link: spencer davis github"><i class="fab fa-github"></i></a></li>
         </ul>
         <nav>
           <ul>
