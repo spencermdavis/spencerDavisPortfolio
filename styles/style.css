@@ -639,8 +639,11 @@ main h2 {
   grid-gap: 4rem;
 }
 
-.section1 ul *:first-child a::before,
-.section1 ul *:last-child a::before {
+.section1 ul *:first-child a::before {
+  bottom: -5px;
+}
+
+.section1 ul *:nth-child(4) a::before {
   bottom: -5px;
 }
 
