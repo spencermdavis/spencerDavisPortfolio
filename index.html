@@ -183,14 +183,14 @@
             <form method="POST" action="http://www.focuspocus.io/magic/spencer@spencerdavis.codes" enctype="multipart/form-data">
             <div class="nameEmailSubject">
               <label for='name'>Name</label>
-              <input type="text" name="name" id='name' placeholder="Name" autocomplete="off" required/>
+              <input type="text" name="name" id='name' placeholder="Name" autocomplete="off" required aria-label="name" aria-required="true"/>
               <label for='email'>Email Address</label>
-              <input type="email" name="email" id='email' placeholder="Email Address" autocomplete="off" required/>
+              <input type="email" name="email" id='email' placeholder="Email Address" autocomplete="off" required aria-label="email address" aria-required="true"/>
               <label for='subject'>Subject</label>
-              <input type="text" name="subject" id='subject' placeholder="Subject" autocomplete="off" required/>
+              <input type="text" name="subject" id='subject' placeholder="Subject" autocomplete="off" required aria-label="email subject" aria-required="true"/>
             </div>
             <label for='message'>Message</label>
-            <textarea name="message" id="message" cols="70" rows="5" placeholder="Message" autocomplete="off" required></textarea>
+            <textarea name="message" id="message" cols="70" rows="5" placeholder="Message" autocomplete="off" required aria-label="email content" aria-required="true"></textarea>
             <input value='Send' type="submit" class="submit"></input>
           </form>
           </div>
